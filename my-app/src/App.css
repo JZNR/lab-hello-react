@@ -1,5 +1,6 @@
 body {
-  width: 100wh;
+  display: flex;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -43,15 +44,40 @@ body {
 }
 
 .grande-div {
-  width: 50%;
-  height: 50%;
-  left: 50%;
-  right: 50%;
-  position: relative;
+  width: 100%;
+  height: 350px;
   background-color: blue;
+}
+
+.cool-stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.cool-stuff > div{
+  width: 50%;
+}
+
+.cool-stuff > h1 {
+  color: white;
+  margin-left: 5%;
+}
+
+.cool-stuff > a {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
